@@ -16,18 +16,20 @@ public class User implements Serializable {
 	private Long id;
 	private String name;
 	private String email;
-	private String phone;
 	private String password;
+	private String phone;
+	
 	
 	public User() {	}
 
-	public User(Long id, String name, String email, String phone, String password) {
+	public User(Long id, String name, String email, String password, String phone) {
 		super();
 		this.id = id;
 		this.name = name;
 		this.email = email;
-		this.phone = phone;
 		this.password = password;
+		this.phone = phone;
+		
 	}
 
 	public Long getId() {
